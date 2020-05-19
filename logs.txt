@@ -6,3 +6,7 @@
 + player controller
 + enemies
 + camera and background
+5/17
++ coins
+5/18
++ level transition portal
