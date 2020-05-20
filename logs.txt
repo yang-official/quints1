@@ -10,3 +10,5 @@
 + coins
 5/18
 + level transition portal
+5/19
++ main screen, play button, quit button
