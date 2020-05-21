@@ -12,3 +12,8 @@
 + level transition portal
 5/19
 + main screen, play button, quit button
+5/20
++ score tracking
++ pause menu
++ user interface
++ general debugging

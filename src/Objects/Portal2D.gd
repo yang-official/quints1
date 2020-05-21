@@ -10,13 +10,14 @@ func _get_configuration_warning() -> String:
 func teleport() -> void:
 	anim_player.play("fade_in")
 	yield(anim_player, "animation_finished")
-	get_tree().change_scene_to(next_scene)
+	if get_tree().change_scene_to(next_scene) != OK:
+		print("portal to next scene failed")
 	pass
 
 
-func _on_Portal2D_body_entered(body: Node) -> void:
+func _on_Portal2D_body_entered(_body: Node) -> void:
 	pass # Replace with function body.
 
 
-func _on_body_entered(body: Node) -> void:
+func _on_body_entered(_body: Node) -> void:
 	teleport()
