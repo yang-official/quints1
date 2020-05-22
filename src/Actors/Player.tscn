@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://assets/player.png" type="Texture" id=1]
 [ext_resource path="res://src/Actors/Player.gd" type="Script" id=2]
+[ext_resource path="res://src/Actors/Guns/Gun.tscn" type="PackedScene" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 40, 48 )
@@ -42,5 +43,7 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyDetector"]
 modulate = Color( 0.0117647, 0, 0.333333, 1 )
 shape = SubResource( 2 )
+
+[node name="Gun" parent="." instance=ExtResource( 3 )]
 [connection signal="area_entered" from="EnemyDetector" to="." method="_on_EnemyDetector_area_entered"]
 [connection signal="body_entered" from="EnemyDetector" to="." method="_on_EnemyDetector_body_entered"]

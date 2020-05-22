@@ -17,3 +17,5 @@
 + pause menu
 + user interface
 + general debugging
+5/21
++ initialized basic gun and bullet
