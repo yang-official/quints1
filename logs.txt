@@ -19,3 +19,5 @@
 + general debugging
 5/21
 + initialized basic gun and bullet
+5/23
++ initialize networking system
